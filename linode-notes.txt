@@ -13,3 +13,22 @@ Follow through user (root) and password creation, straightforward.
 Boot the linode with the dashboard button. Now it is up and running. 
 
 
+Logging in first time and setting up SSH.
+https://www.linode.com/docs/getting-started/
+https://www.linode.com/docs/security/securing-your-server
+django-git/ssh-notes.txt (#####make)
+
+Your linode's public IP is in the "remote access" tab. 
+In terminal run "ssh root@<public IP>", answer yes to the security query to get in. 
+You are now accessing the linode. Yay. Terminal should now show root@<linode's public IP>:~#
+
+Make a non-root user using "adduser <name>". Follow prompts for details.
+"adduser <name> sudo" for admin power. 
+Change to <name> using su <name>. You should now see <name>@<linode's public IP>:~# in terminal
+
+SSH (Secure SHell) connection to linode 
+Open another terminal on your local machine. In your user directory.
+Check for local ssh keys using "ls ~/.ssh". There may already be a key pair.
+If not, generate a key using "ssh-keygen -b 4096". Either enter through, or add passphrase, depending on how you feel.
+Copy the public key generated to the linode using "ssh-copy-id <name>@<linode's pubilc IP>"
+Now you should be able to exit and re-enter the linode using ssh rather than passwords. 
