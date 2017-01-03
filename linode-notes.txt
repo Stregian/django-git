@@ -1,0 +1,15 @@
+Using ubuntu terminal in this note.
+
+
+Getting it up and running. 
+https://www.linode.com/docs/getting-started/
+
+Linode stands for linux node. A node is a server in this case. 
+In linode manager select your linode. This should take you to its dashboard. 
+There are many tabs here, but select "deploy an image" button. 
+Unless there's a good reason, use default settings with the latest Ubuntu.
+Follow through user (root) and password creation, straightforward. 
+"Host job queue" on the dashboard shows when OS installation is finished. 
+Boot the linode with the dashboard button. Now it is up and running. 
+
+
