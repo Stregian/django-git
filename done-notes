@@ -1,1 +1,5 @@
 reset up virtualenv, started up server https://www.linode.com/docs/websites/nginx/deploy-django-applications-using-uwsgi-and-nginx-on-ubuntu-14-04
+
+There was something of an issue when running "sudo service uwsgi start", and I used http://serverfault.com/questions/775965/wiring-uwsgi-to-work-with-django-and-nginx-on-ubuntu-16-04 to fix the issue
+
+finished configuring nginx, I think. performed a check that it was working, and on the browser <linode ip> showed a message from nginx
