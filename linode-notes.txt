@@ -32,3 +32,5 @@ Check for local ssh keys using "ls ~/.ssh". There may already be a key pair.
 If not, generate a key using "ssh-keygen -b 4096". Either enter through, or add passphrase, depending on how you feel.
 Copy the public key generated to the linode using "ssh-copy-id <name>@<linode's pubilc IP>"
 Now you should be able to exit and re-enter the linode using ssh rather than passwords. 
+
+Sometimes the terminal stops working presumably due to inactivity. In the local computer's ssh/config file added a line, ServerAliveInterval 60 which may help. 
