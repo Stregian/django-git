@@ -1,0 +1,19 @@
+still to do. Comment out things already done
+
+Try to get git working between my local machine and the server through ssh
+
+go through the nginx and uwsgi tutorial on linode. 
+
+re-read all that I have to do on the email and expand this list
+  make a django app:
+    inside a virtualenv
+    using a nginx webserver
+    and uwsgi
+    and mSQL
+    
+    compile nginx with the google pagespeed module
+    find ways to improve my website's score on www.webpagetest.org and tools.pingdom.com
+    
+    get local code to save to get and change files on the server
+    
+    The django app uses SORL thumbnail and Django mobile. 
