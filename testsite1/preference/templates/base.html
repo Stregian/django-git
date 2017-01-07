@@ -12,11 +12,17 @@ TAPE -
 {% endblock%}
 </title></head>
 <body>
-{% block navbar %}
-{% endblock %}
-{% block body %}
+{% block navbar %} <div id = "navbar">
+    <ul>
+    <li><a href="{% url "preference:preference-homepage"%}">home</li>
+    <li><a href="{% url "preference:add-choice"%}">add</li>
+    <li><a href="{% url "preference:contact"%}">contact</li>
+    </ul>
+
+</div>{% endblock %}
+{% block body %} <div>
     <p>this is where the content/forms go</p>
-{% endblock %}
+</div>{% endblock %}
 {% block footer%}
     <div id="footer">
 
