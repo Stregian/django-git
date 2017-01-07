@@ -1,0 +1,5 @@
+Once machine is up and running install virtualenv for python. 
+To make a virtualenv, simply run "virtualenv <environment/project name>"
+
+Once everything is up and running properly, it is worth running "pip freeze" to create a requirements.txt.
+This can be used, "pip install -r requirements.txt". So far as I know it can have it's name changed.

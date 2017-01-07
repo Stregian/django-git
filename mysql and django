@@ -1,0 +1,8 @@
+
+https://realpython.com/learn/start-django/
+
+once installed mysql needs to be accessed using "mysql -u root -p" and filling in the password
+Then create the database for django using CREATE DATABASE django_db;
+
+Issues with the mysql_config not being there can be resolved with help:
+http://stackoverflow.com/questions/5178292/pip-install-mysql-python-fails-with-environmenterror-mysql-config-not-found

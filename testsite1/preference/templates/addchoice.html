@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+    Add a choice
+{% endblock %}
+{% block body %}
+    <form action="" method="post">
+        <table>
+            {{ AddingForm }}
+        </table>
+        {% csrf_token %}
+        <input type='submit' value="Submit">
+    </form>
+    There should be a form here, to add two choices
+{% endblock%}

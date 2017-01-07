@@ -1,5 +1,7 @@
 still to do. Comment out things already done
 
+Make sure that mysql is working properly on the linode. 
+
 Try to get git working between my local machine and the server through ssh
 
 go through the nginx and uwsgi tutorial on linode. 
