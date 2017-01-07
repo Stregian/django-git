@@ -7,9 +7,9 @@ from preference.forms import TestForm
 # Create your views here.
 
 def preferencehomepage(request):
-    http = 'this page should have two choices on it. At some point.'
-    return HttpResponse(http)
-    
+    #http = 'this page should have two choices on it. At some point.'
+    #return HttpResponse(http)
+    return render(request, 'main.html', {})
 def add_choice(request):
     if request.method == 'POST':
         form = AddingForm(request.POST)

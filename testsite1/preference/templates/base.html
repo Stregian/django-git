@@ -1,18 +1,27 @@
+{% load staticfiles %}
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang = "en">
-<head><title>
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<title>
 TAPE - 
 {% block title %}
         
 {% endblock%}
 </title></head>
 <body>
-<h1>Here should go a header bar for the webpage. Learn some CSS</h1>
+{% block navbar %}
+{% endblock %}
 {% block body %}
     <p>this is where the content/forms go</p>
 {% endblock %}
 {% block footer%}
-    <p>C.R.Strickland</p>
+    <div id="footer">
+
+        <p>C.R.Strickland</p>
+    </div>
 {% endblock%}
 </body>
 
