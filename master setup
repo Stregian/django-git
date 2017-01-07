@@ -1,0 +1,12 @@
+Install a linux distro on linode
+Boot and login using ssh root@<linodeip>
+Update + upgrade, set up hostname and timezone
+Make limited sudo user, establish ssh keys to local
+Adjust ssh daemon in /etc/ssh/sshd_config for security
+Exit and enter to make sure all works. 
+
+Install virtualenv, git, nginx, uwsgi, mysql-server
+Run a virtualenv.
+Set up a git repo for project. Start committing. 
+Pip install python stack for project. 
+Update + upgrade. Check that nginx, uwsgi are working.
