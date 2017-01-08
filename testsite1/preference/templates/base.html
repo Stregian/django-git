@@ -1,18 +1,33 @@
+{% load staticfiles %}
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang = "en">
-<head><title>
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<title>
 TAPE - 
 {% block title %}
         
 {% endblock%}
 </title></head>
 <body>
-<h1>Here should go a header bar for the webpage. Learn some CSS</h1>
-{% block body %}
+{% block navbar %} <div id = "navbar">
+    <ul>
+    <li><a href="{% url "preference:preference-homepage"%}">home</li>
+    <li><a href="{% url "preference:add-choice"%}">add</li>
+    <li><a href="{% url "preference:contact"%}">contact</li>
+    </ul>
+
+</div>{% endblock %}
+{% block body %} <div>
     <p>this is where the content/forms go</p>
-{% endblock %}
+</div>{% endblock %}
 {% block footer%}
-    <p>C.R.Strickland</p>
+    <div id="footer">
+
+        <p>C.R.Strickland</p>
+    </div>
 {% endblock%}
 </body>
 

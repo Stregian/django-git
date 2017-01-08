@@ -1,0 +1,23 @@
+h1 a {
+    color: #FCA205;
+}
+/*some css notes here http://css-snippets.com/simple-horizontal-navigation/*/
+body {
+    background-color: lightblue;
+    padding-left: 20px;
+}
+ul {
+   display: inline;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+#footer {
+   background-color: white;
+   position: absolute;
+   left: 0px;
+   bottom: 0;
+   width: 100%;
+   height: 60px;  
+   text-align: center;
+}
