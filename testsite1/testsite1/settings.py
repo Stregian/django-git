@@ -127,8 +127,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_LOADERS = {
-    django_mobile.loader.Loader
+    'django_mobile.loader.Loader'
 }
 TEMPLATE_CONTEXT_PROCESSORS = {
-    django_mobile.context_processors.flavour
+    'django_mobile.context_processors.flavour'
 }
