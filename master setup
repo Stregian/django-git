@@ -7,6 +7,13 @@ Exit and enter to make sure all works.
 
 Install virtualenv, git, nginx, uwsgi, mysql-server
 Run a virtualenv.
-Set up a git repo for project. Start committing. 
+Set up a git repo for project. 
+set up a .gitignore for .pyc files and other annoying things like that
+Start committing. 
 Pip install python stack for project. 
 Update + upgrade. Check that nginx, uwsgi are working.
+
+Be sure to change the database manager in django settings
+
+To get pagespeed dependencies install curl dpkg-dev build-essential zlib1g-dev libpcre3 libpcre3-dev unzip
+Then install pagespeed using bash <(curl -f -L -sS https://ngxpagespeed.com/install) --nginx-version latest
