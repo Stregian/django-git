@@ -11,7 +11,16 @@ ul {
    list-style-type: none;
    margin: 0;
    padding: 0;
+   text-align: center;
 }
+li {
+    display: inline-block;
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
 #footer {
    background-color: white;
    position: absolute;
