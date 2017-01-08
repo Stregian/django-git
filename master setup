@@ -1,6 +1,6 @@
 Install a linux distro on linode
 Boot and login using ssh root@<linodeip>
-Update + upgrade, set up hostname and timezone
+Update + upgrade, set up hostname and timezone. If concerned use linode docs.
 Make limited sudo user, establish ssh keys to local
 Adjust ssh daemon in /etc/ssh/sshd_config for security
 Exit and enter to make sure all works. 
@@ -13,7 +13,10 @@ Start committing.
 Pip install python stack for project. 
 Update + upgrade. Check that nginx, uwsgi are working.
 
-Be sure to change the database manager in django settings
+Be sure to change the database manager in django settings to mysql settings
+pip install MySQL-python, run it using mysql -u root -p and enter password.
+Create a database with the name in settings.py, then quit and make migrations.
+manage.py createsuperuser to make an admin for the site. 
 
 To get pagespeed dependencies install curl dpkg-dev build-essential zlib1g-dev libpcre3 libpcre3-dev unzip
 Then install pagespeed using bash <(curl -f -L -sS https://ngxpagespeed.com/install) --nginx-version latest
