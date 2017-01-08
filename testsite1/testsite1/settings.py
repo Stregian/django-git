@@ -50,8 +50,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django_mobile.middleware.MobileDetectionMiddleware',
-    'django_mobile.middleware.SetFlavourMiddleware',
+    #'django_mobile.middleware.MobileDetectionMiddleware',
+    #'django_mobile.middleware.SetFlavourMiddleware',
 ]
 
 ROOT_URLCONF = 'testsite1.urls'
