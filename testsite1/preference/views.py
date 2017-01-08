@@ -29,5 +29,4 @@ def add_choice(request):
     return render(request,'addchoice.html',{'AddingForm':form})
     
 def contact(request):
-    http = 'a simple contact page'
-    return HttpResponse(http)
+    return render(request,'contact.html',{})
