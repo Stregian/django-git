@@ -132,3 +132,5 @@ TEMPLATE_LOADERS = {
 TEMPLATE_CONTEXT_PROCESSORS = {
     'django_mobile.context_processors.flavour'
 }
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
