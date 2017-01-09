@@ -3,6 +3,7 @@ h1 a {
 }
 /*some css notes here http://css-snippets.com/simple-horizontal-navigation/*/
 body {
+    font-family:"courier new";
     background-color: lightblue;
     padding-left: 20px;
 }

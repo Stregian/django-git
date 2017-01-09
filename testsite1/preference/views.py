@@ -3,7 +3,7 @@ from django.http import HttpResponse, Http404
 
 from preference.models import Choice
 from preference.forms import AddingForm
-from preference.forms import TestForm
+#from preference.forms import TestForm
 # Create your views here.
 
 def preferencehomepage(request):

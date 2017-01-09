@@ -1,7 +1,12 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 
 {% block body %}
-<p>Instead of a contact page, here are some images to check if static files are being served properly</p>
+
+<p>Charles Strickland</p>
+<p>stregian@gmail.com</p>
+<p>Here is an image to check if static files are being served properly</p>
+<img src="{% static "media/2048.jpg"%}" width="50%" height="50%"/>
+
 {% endblock %}

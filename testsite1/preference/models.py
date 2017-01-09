@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
-
+from django.utils import timezone
 # Create your models here.
 
 class Choice(models.Model):
@@ -9,6 +9,7 @@ class Choice(models.Model):
     score = models.IntegerField(default=0)
     rank = models.IntegerField(default=0)
     streak = models.IntegerField(default=0)
+    created_date = models.DateTimeField(default=timezone.now)
     
     def streakchange(self):
         return 1

@@ -5,7 +5,7 @@
 {% block body %}
     <form action="" method="post">
         <table>
-            {{ AddingForm }}
+            {{ AddingForm.as_table }}
         </table>
         {% csrf_token %}
         <input type='submit' value="Submit">
