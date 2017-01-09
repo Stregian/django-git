@@ -16,9 +16,9 @@ def add_choice(request):
         if form.is_valid():
             option1 = form.cleaned_data['option1']
             option2 = form.cleaned_data['option2']
-            number = form.cleaned_data['number']
+            #number = form.cleaned_data['number']
             return HttpResponse('Thank you for submitting your choices')
-            number = form.cleaned_data['number']
+            #number = form.cleaned_data['number']
             C1 = Choice(text = option1)
             C1.save()
             C2 = Choice(text = option2)
